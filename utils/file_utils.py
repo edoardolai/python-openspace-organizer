@@ -11,7 +11,7 @@ def distribute_evenly(unseated, max_c):
         return tables
         
 
-def arrange_new_tables(unseated: int, max_capacity: int, min_capacity: int, iteration_count = 0):
+def arrange_new_tables(unseated: int, max_capacity: int, min_capacity: int):
     if unseated <= max_capacity or max_capacity == min_capacity:
         return distribute_evenly(unseated, max_capacity)
     else:
