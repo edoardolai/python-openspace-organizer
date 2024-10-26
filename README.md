@@ -74,6 +74,3 @@ Table 2: [Student D, Student E, Student F]
 Table 3: [Student G, Student H]
 Remaining Unseated: [Student I]
 ```
-
-
-# python-openspace-organizer
