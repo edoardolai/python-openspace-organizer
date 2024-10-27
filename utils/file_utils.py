@@ -32,24 +32,24 @@ def arrange_new_tables(unseated: int, max_capacity: int, min_capacity: int):
         
 def display_openspace_info(openspace: Openspace):
     while True:
-        info_option = int(input("Select an option of the info you want to know about: \n"
+        info_option = input("Select an option of the info you want to know about: \n"
                             "1 - Total People \n"
                             "2 - Number of Tables \n"
                             "3 - People Unseated \n"
                             "4 - Dispaly current room disposition \n"
-                            "Or press any other key to continue: "))
+                            "Or press any other key to continue: ")
         
         match info_option:
-            case(1):
+            case('1'):
                 total_people = sum(openspace.disposition_as_csv.count()) 
                 print(f"Total People: {total_people}")
-            case(2):
+            case('2'):
                 number_of_tables = len(openspace.tables)  
                 print(f"Number of Tables: {number_of_tables}")
-            case(3):
+            case('3'):
                 unseated_people = openspace.people_standing if openspace.people_standing is not (None or []) else "Everybody found a seat" 
                 print(f"People Unseated: {unseated_people}")
-            case(4):
+            case('4'):
                openspace.display()
             case _:
                 print("Exiting information display.")

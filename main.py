@@ -85,6 +85,8 @@ def main():
     display_remaining_people(open_space)
     
     continue_arrangement = handle_arrangement(open_space, remaining)
+    display_openspace_info(open_space)
+    
     export_configuration(open_space, continue_arrangement)
 
     print("Bye!")
